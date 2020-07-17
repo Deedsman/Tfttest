@@ -1,0 +1,17 @@
+@mixin display($jc, $ai) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+@mixin font($fs, $color, $fw) {
+  font-size: $fs;
+  color: $color;
+  font-weight: $fw;
+}
+@mixin link {
+  text-transform: capitalize;
+  text-decoration: none;
+  @include font(11px, #000000, 300);
+  cursor: pointer;
+  letter-spacing: 0.02em;
+}
